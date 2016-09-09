@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Marco Diversi</title>
+
+    <!-- Bootstrap Core CSS -->
+    <%= stylesheet_link_tag("bootstrap.min.js")%>
+
+    <!-- Theme CSS -->
+    <%= stylesheet_link_tag("freelancer.min.csss")%>
+
+    <!-- Custom Fonts -->
+
+    <link href="assets/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body id="page-top" class="index">
+
+     <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Marco Diversi</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  <%= image_tag("profile.png", class: "img-responsive")%>
+                    <div class="intro-text">
+                        <span class="name">Marco Diversi</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer, Technology , Solutionist, Engineer </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("cabin.png", class: "img-responsive")%>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("cake.png",class: "img-responsive")%>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("circus.png", class: "img-responsive")%>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("game.png", class: "img-responsive")%>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("safe.png",class: "img-responsive")%>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <%= image_tag("submarine.png", class: "img-responsive")%>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p align="jusify">Marco Diversi is a very talented individual, never shy in front of the challenge and adventurous, he graduated in civil enginering and then discovered the  passion for Apple and Web developing, he has a good understanding of the computer science. He has completed CS50 from Harvard and he's doing Free Code camp along different projects, he studied at a coding bootcamp IRON HACK  where he learned how to make web apps with Ruby on Rails, Responsive, Databases etc.. He has confidence and he's never tired of learning.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p align="jusify">Specializations - Version Control: Git, GitHub, Bitbucket. Development Tools: VirtualBox, Heroku, Amazon Web Services, Agile. Languages: Ruby, JavaScript, SQL, HTML, CSS, SASS, Python, . Frameworks & Libraries: Ruby on Rails, Sinatra, jQuery, React.js, Node.js, Express.js, Bootstrap. Design Tools: Photoshop.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="assets/Marco Diversi Resume.pdf" target="_blank" class="btn btn-lg btn-outline">
+                        <i class="fa fa-download"> Download my resume </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <br><br>
+                    <div class="container">
+                        <div class="row">
+                            <div class = "text-center">
+                            <div class="form-group col-xs-12">
+                                <a href ="mailto:marcodiversi@gmail.com" target="_blank" ><button  type="submit" class="btn btn-success btn-lg">If you want to send me an e-mail, click here !</button><a/>
+                            </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Keizer KarelStraat 162/005
+                            <br>9000 Ghent - Belgium</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="tel:+32486759717" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-phone"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:marcodiversi@gmail.com" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-envelope"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/marcodiversi" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                             <li>
+                                <a href="https://www.paypal.me/marcodiversi" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-paypal"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/marcodiversi/en" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="http://www.marcodiversi.com/" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Marco Diversi</h3>
+                        <p>Feel free to follow me and contact me if you need to make a website, web app, ecommerce or any tech advice. <a href="#"></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Marco Diversi 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+  <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Minneapolis</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("cabin.png", class: "img-responsive")%>
+                            <p>This is me and my friend Jesse in Minneapolis, MN<a href="http://www.atlasobscura.com/places/spoonbridge-and-cherry"> Read more</a>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Very nice Picture</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("cake.png",class: "img-responsive")%>
+                            <p>I love weird pictures</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mountains</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("circus.png",class: "img-responsive")%>
+                            <p>I love mountains, the dolomites in italy are so cool.<a href="http://www.visitdolomites.com/en" > Read more</a>.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>The Bridge</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("game.png", class: "img-responsive")%>
+                            <p> A cool pic on a bridge in Groton, MA</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2015</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>North Miami beach</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("safe.png", class: "img-responsive")%>
+                            <p>Set of a movie on the Shores of North Miami Beach</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2013</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Just a Cock</h2>
+                            <hr class="star-primary">
+                            <%= image_tag("submarine.png", class: "img-responsive")%>
+                            <p>I really wanted to put a cock picture on my portfolio.</p>
+                           <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="#">Marco Diversi</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="#">August 2016</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="#">Travel</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+
+    <%= javascript_include_tag("jquery.min.js")%>
+    <!-- Bootstrap Core JavaScript-->
+
+    <%= javascript_include_tag("bootstrap.min.js")%>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
+
+    <%= javascript_include_tag("jqBootstrapValidation.js")%>
+
+    <%= javascript_include_tag("contact_me.js")%>
+
+    <!-- Theme JavaScript -->
+
+    <%= javascript_include_tag("freelancer.min.js")%>
+
+</body>
+
+</html>
